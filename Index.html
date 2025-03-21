@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Перенаправление...</title>
+    <title>Tap2Meet</title>
     <style>
       body {
         display: flex;
@@ -11,11 +11,13 @@
         align-items: center;
         height: 100vh;
         margin: 0;
-        background-color: #f7f7f7;
+        background-color: #ffffff; /* Белый фон */
         font-family: 'Arial', sans-serif;
         text-align: center;
+        overflow: hidden;
       }
 
+      /* Стиль кнопки в стиле TikTok */
       .pulse-button {
         display: inline-flex;
         justify-content: center;
@@ -25,7 +27,7 @@
         font-size: 18px;
         font-weight: bold;
         color: #fff;
-        background: linear-gradient(135deg, #25F4D0, #FE2C77); /* Цвета, схожие с TikTok */
+        background: linear-gradient(135deg, #25F4D0, #FE2C77); /* Градиент как у TikTok */
         border: none;
         border-radius: 30px;
         cursor: pointer;
@@ -37,6 +39,7 @@
 
       .pulse-button:hover {
         transform: scale(1.1);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Эффект при наведении */
       }
 
       .pulse-button:active {
@@ -53,6 +56,23 @@
         100% {
           transform: scale(1);
         }
+      }
+
+      /* Анимация для фона страницы */
+      @keyframes backgroundAnim {
+        0% {
+          background-color: #ffffff;
+        }
+        50% {
+          background-color: #f7f7f7;
+        }
+        100% {
+          background-color: #ffffff;
+        }
+      }
+
+      body {
+        animation: backgroundAnim 5s infinite;
       }
 
       /* Для мобильных устройств */

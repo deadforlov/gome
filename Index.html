@@ -2,10 +2,72 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://stakev.top/click?o=2&a=3126&aff_param1=twobuttons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Перенаправление...</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f7f7f7;
+        font-family: 'Arial', sans-serif;
+        text-align: center;
+      }
+
+      .pulse-button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 220px;
+        height: 60px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        background: linear-gradient(135deg, #25F4D0, #FE2C77); /* Цвета, схожие с TikTok */
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        text-decoration: none;
+        animation: pulse 1.5s infinite;
+      }
+
+      .pulse-button:hover {
+        transform: scale(1.1);
+      }
+
+      .pulse-button:active {
+        transform: scale(0.98);
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      /* Для мобильных устройств */
+      @media (max-width: 768px) {
+        .pulse-button {
+          width: 180px;
+          height: 50px;
+          font-size: 16px;
+        }
+      }
+    </style>
 </head>
 <body>
-    <p>Если вас не перенаправило, <a href="https://stakev.top/click?o=2&a=3126&aff_param1=twobuttons">нажмите здесь</a>.</p>
+    <a href="https://stakev.top/click?o=2&a=3126&aff_param1=twobuttons" class="pulse-button">
+        TouchHere
+    </a>
 </body>
 </html>
